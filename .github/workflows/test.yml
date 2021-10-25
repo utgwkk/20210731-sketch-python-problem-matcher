@@ -26,4 +26,4 @@ jobs:
       - name: Install plugin
         run: pip install pytest-github-actions-annotate-failures==0.1.4
 
-      - run: pytest -k test_plugin
+      - run: pytest -k test_example
