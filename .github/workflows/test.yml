@@ -23,6 +23,6 @@ jobs:
           pip install glob2
 
       - name: Install plugin
-        run: pip install pytest-github-actions-annotate-failures
+        run: pip install pytest-github-actions-annotate-failures==0.1.4
 
       - run: pytest
