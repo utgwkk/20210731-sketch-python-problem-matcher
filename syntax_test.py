@@ -11,3 +11,8 @@ def test_syntax(path):
         py_compile.compile(path, doraise=True)
     except py_compile.PyCompileError as ex:
         pytest.fail(ex.msg)
+
+@pytest.mark.flaky(reruns=5)
+def test_example():
+    import random
+    assert random.choice([True, False])
